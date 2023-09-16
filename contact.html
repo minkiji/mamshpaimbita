@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamsh Paimbita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/mamshpaimbitalogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pricelist.html">PRICELIST</a></li>
+                    <li><a href="invitations.html">INVITATIONS</a></li>
+                    <li><a href="about.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+        <p>Have a project in mind? Want to collaborate or just say hello?<br>We'd love to hear from you. </p>
+
+    </section>
+
+<!---------- Contact Us Content ---------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.6659860208156!2d120.58547832431353!3d15.32891749348061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ebf473d65421%3A0x8cc1ae5195d6e372!2sR%26N%20Building!5e0!3m2!1sen!2sph!4v1693340928351!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>R & N Building</h5>
+                    <p>Capas, Tarlac</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+639773663252</h5>
+                    <p>Monday To Saturday, 7AM to 2AM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>marscayabyab1227@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="message-col">
+
+            <form action="form.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+<!---------- Footer ---------->
+
+<section class="footer">
+    <h4><span>About Us</span></h4>
+    <p>At Mamsh Paimbita, we believe in the magic of special moments. Founded with a passion for creativity and a dedication<br>to making dreams come true, our journey began in 2021. Since then, we have been on a mission to craft<br>unforgettable experiences and design treasures that tell unique stories.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-shopping-bag"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Minki </p>
+</section>
+
+<!----------JavaScript for Toggle Menu---------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+</body>
+</html>
